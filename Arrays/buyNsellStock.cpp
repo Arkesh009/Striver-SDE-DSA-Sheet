@@ -31,15 +31,16 @@ int maxProfit(vector<int> &prices)
     // return profit;
 
     int mini = prices[0];
-    int maxProfit = 0;
+    int Profit = 0;
     int n = prices.size();
+
     for (int i = 1; i < n; i++)
     {
-        int cost = prices[i] - mini;
-        maxProfit = max(maxProfit, cost);
-        mini = min(mini, prices[i]);
+        int cost = prices[i] - mini; // cost of stock = (current price - minimum price)
+        Profit = max(Profit, cost);  // profit = who is (greater profit or cost)
+        mini = min(mini, prices[i]); // set minimum to the lowest between mini and the current price
     }
-    return maxProfit;
+    return Profit;
 }
 
 int main()
