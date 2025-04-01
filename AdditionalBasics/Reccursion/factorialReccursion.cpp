@@ -16,7 +16,8 @@ int main()
 
 int factN(int n)
 {
-    if (n == 1){
+    if (n == 1)
+    {
         return 1;
     }
     return n * factN(n - 1);
