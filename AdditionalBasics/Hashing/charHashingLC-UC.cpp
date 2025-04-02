@@ -8,13 +8,13 @@ int main()
     string s;
     cout << "Enter the string\n";
     getline(cin, s);
-   
+
     // Pre computation
     // hashing
     int hash[26] = {0};
     for (int i = 0; i < s.size(); i++)
     {
-        hash[s[i]-'a']++;
+        hash[s[i] - 'a']++;
     }
 
     // Handling querry
@@ -26,7 +26,7 @@ int main()
         char c;
         cin >> c;
         // fetching:
-        cout << hash[c-'a'] << endl;
+        cout << hash[c - 'a'] << endl;
     }
 
     return 0;
