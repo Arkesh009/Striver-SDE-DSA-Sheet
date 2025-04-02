@@ -1,6 +1,6 @@
-// print N to 1 in 
+// print N to 1 in
 
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 void printN(int);
@@ -17,9 +17,9 @@ int main()
 
 void printN(int n)
 {
-    if (n>0)
+    if (n > 0)
     {
         cout << n << " ";
     }
-    printN(n-1);
+    printN(n - 1);
 }
