@@ -1,14 +1,17 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-void seeding(int n) {
-	 
-	for(int i=0; i<n; i++){
-		for(int j=n; j>i; j--){
-			cout << "* ";
-		}
-		cout << "\n";
-	}
+void seeding(int n)
+{
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = n; j > i; j--)
+        {
+            cout << "* ";
+        }
+        cout << "\n";
+    }
 }
 
 int main()
@@ -18,6 +21,6 @@ int main()
     cin >> n;
     cout << "The derised Pattern\n";
     seeding(n);
-   
-   return 0;
+
+    return 0;
 }
