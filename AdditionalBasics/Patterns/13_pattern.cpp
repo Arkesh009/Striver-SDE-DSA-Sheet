@@ -1,10 +1,13 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-void nNumberTriangle(int n) {
+void nNumberTriangle(int n)
+{
     int it = 1;
-    for(int i=1; i<=n; i++){
-        for(int j=1; j<=i; j++){
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
             cout << it << " ";
             it++;
         }
@@ -19,5 +22,5 @@ int main()
     cin >> n;
     cout << "The derised Pattern\n";
     nNumberTriangle(n);
-   return 0;
+    return 0;
 }
