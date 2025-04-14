@@ -1,15 +1,20 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-void numberCrown(int n) {
-    for(int i=1; i<=n; i++){
-        for(int j=1; j<=i; j++){
+void numberCrown(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
             cout << j << " ";
         }
-        for(int k=1; k<=2*(n-i); k++){
+        for (int k = 1; k <= 2 * (n - i); k++)
+        {
             cout << " ";
         }
-        for(int j=i; j>0; j--){
+        for (int j = i; j > 0; j--)
+        {
             cout << j << " ";
         }
         cout << "\n";
@@ -23,5 +28,5 @@ int main()
     cin >> n;
     cout << "The derised Pattern\n";
     numberCrown(n);
-   return 0;
+    return 0;
 }
