@@ -1,23 +1,27 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-bool isArmstrong(int n) {
-    if(n<0){
+bool isArmstrong(int n)
+{
+    if (n < 0)
+    {
         return false;
     }
 
     int temp = n;
     int sum = 0;
     int digits = 0;
-    while(temp){
+    while (temp)
+    {
         digits++;
         temp /= 10;
     }
 
     temp = n;
 
-    while(temp){
-        int last = temp%10;
+    while (temp)
+    {
+        int last = temp % 10;
         sum += pow(last, digits);
         temp /= 10;
     }
@@ -31,11 +35,14 @@ int main()
     cout << "Enter a number: ";
     cin >> n;
 
-    if (isArmstrong(n)) {
+    if (isArmstrong(n))
+    {
         cout << n << " is an Armstrong number." << endl;
-    } else {
+    }
+    else
+    {
         cout << n << " is not an Armstrong number." << endl;
     }
 
-   return 0;
+    return 0;
 }
