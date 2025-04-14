@@ -1,12 +1,18 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-void nBinaryTriangle(int n) {
-    for(int i=1; i<=n; i++){
-        for(int j=1; j<=i; j++){
-            if((i+j)%2 == 0){
+void nBinaryTriangle(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            if ((i + j) % 2 == 0)
+            {
                 cout << "1 ";
-            }else{
+            }
+            else
+            {
                 cout << "0 ";
             }
         }
@@ -21,5 +27,5 @@ int main()
     cin >> n;
     cout << "The derised Pattern\n";
     nBinaryTriangle(n);
-   return 0;
+    return 0;
 }
