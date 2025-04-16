@@ -1,15 +1,24 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-void getStarPattern(int n) {
-    for(int i=1; i<=n; i++){
-        for(int j=1; j<=n; j++){
-            if(i==1 || i==n){
+void getStarPattern(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n; j++)
+        {
+            if (i == 1 || i == n)
+            {
                 cout << "*";
-            }else{
-                if(j==1 || j==n){
+            }
+            else
+            {
+                if (j == 1 || j == n)
+                {
                     cout << "*";
-                }else{
+                }
+                else
+                {
                     cout << " ";
                 }
             }
@@ -18,7 +27,6 @@ void getStarPattern(int n) {
     }
 }
 
-
 int main()
 {
     int n;
@@ -26,5 +34,5 @@ int main()
     cin >> n;
     cout << "The derised Pattern\n";
     getStarPattern(n);
-   return 0;
+    return 0;
 }
