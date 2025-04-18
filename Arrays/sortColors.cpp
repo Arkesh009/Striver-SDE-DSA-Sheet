@@ -1,20 +1,25 @@
 // 75. Sort Colors
 
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-void sortColors(vector<int>& nums) {
-    //sort(nums.begin(), nums.end());
-    int j=0;
-    for(int i=0; i<nums.size(); i++){
-        if(nums[i]==0){
+void sortColors(vector<int> &nums)
+{
+    // sort(nums.begin(), nums.end());
+    int j = 0;
+    for (int i = 0; i < nums.size(); i++)
+    {
+        if (nums[i] == 0)
+        {
             swap(nums[i], nums[j]);
             j++;
         }
     }
 
-    for(int i=j; i<nums.size(); i++){
-        if(nums[i]==1){
+    for (int i = j; i < nums.size(); i++)
+    {
+        if (nums[i] == 1)
+        {
             swap(nums[i], nums[j]);
             j++;
         }
@@ -48,5 +53,5 @@ int main()
         cout << i << " ";
     }
     cout << endl;
-   return 0;
+    return 0;
 }
