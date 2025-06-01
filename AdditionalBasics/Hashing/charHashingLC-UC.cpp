@@ -7,27 +7,28 @@ int main()
 {
     string s;
     cout << "Enter the string\n";
-    getline(cin, s);
+    getline(cin, s); // Input the string (can include spaces)
 
     // Pre computation
-    // hashing
+    // Hashing: Initialize a hash array for 26 lowercase letters
     int hash[26] = {0};
     for (int i = 0; i < s.size(); i++)
     {
+        // Increment the count for the character (assumes all are lowercase)
         hash[s[i] - 'a']++;
     }
 
-    // Handling querry
+    // Handling queries
     int q;
     cout << "Enter the number of querries\n";
-    cin >> q;
+    cin >> q; // Input the number of queries
     while (q--)
     {
         char c;
-        cin >> c;
-        // fetching:
+        cin >> c; // Input the character to query
+        // Fetch and print the frequency of the queried character
         cout << hash[c - 'a'] << endl;
     }
 
-    return 0;
+    return 0; // Exit the program
 }
